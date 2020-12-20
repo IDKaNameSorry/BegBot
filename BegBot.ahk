@@ -7,7 +7,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
 #MaxThreadsPerHotkey 3
-*f3::				;Press F3 to trigger the bot
+*alt::				;Press alt to trigger the bot
 #MaxThreadsPerHotkey 1
 If SpamLoop {
     SpamLoop := False
@@ -26,3 +26,4 @@ Loop {
     if not SpamLoop          ;-some miliseconds and you wont be able to beg lol
         break
 }
+
